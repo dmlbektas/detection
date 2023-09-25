@@ -37,5 +37,6 @@ while True:
     cv2.imshow("mask", green)
     cv2.imshow("green", frame)
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+   key = cv2.waitKey(1)
+    if key == 27:
         break
